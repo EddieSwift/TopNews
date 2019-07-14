@@ -117,17 +117,11 @@ class NewsTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        print(articles.count)
-        
-        
+
         let cell = Bundle.main.loadNibNamed("ArticleTableViewCell", owner: self, options: nil)?.first as! ArticleTableViewCell
         
         let article = self.articles[indexPath.row]
-        
-        cell.articleTitleLabel.text = article.title
-        cell.articleDescriptionLabel.text = article.desc
-        cell.articleImageView.loadImageUsingCacheWithUrlString(article.image)
+        cell.configureWith(article: article)
         
         return cell
     }
@@ -138,7 +132,7 @@ class NewsTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100;
+        return 100
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

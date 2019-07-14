@@ -8,10 +8,21 @@
 
 import UIKit
 
-class ArticleTableViewCell: UITableViewCell {
+final class ArticleTableViewCell: UITableViewCell {
     
     // MARK: Outlets
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var articleDescriptionLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    func configureWith(article: Article) {
+        
+        self.articleTitleLabel.text = article.title
+        self.articleDescriptionLabel.text = article.desc
+        self.articleImageView.loadImageUsingCacheWithUrlString(article.image)
+    }
 }

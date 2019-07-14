@@ -8,17 +8,10 @@
 
 import UIKit
 
-class Article: NSObject {
+struct Article {
     
     let title : String
     let desc : String
     let image : String
     let url : URL
-    
-    init(title: String, desc: String, image: String, url: URL) {
-        self.title = title
-        self.desc = desc
-        self.image = image
-        self.url = url
-    }
 }

@@ -73,10 +73,9 @@
 				2CB5A96322D494080091FE71 /* Controllers */,
 				2CB5A96222D48F650091FE71 /* Views */,
 				2CB5A96822D495470091FE71 /* Models */,
-				2CAC25B322D48B8A0018F93C /* Main.storyboard */,
+				2CB5A96B22D519710091FE71 /* Storyboards */,
 				2CAC25B622D48B8C0018F93C /* Assets.xcassets */,
 				2CAC25BB22D48B8C0018F93C /* Info.plist */,
-				2CAC25C122D48BC00018F93C /* LaunchScreen.storyboard */,
 			);
 			path = TopNews;
 			sourceTree = "<group>";
@@ -105,6 +104,15 @@
 				2CB5A96922D495640091FE71 /* Article.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2CB5A96B22D519710091FE71 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2CAC25B322D48B8A0018F93C /* Main.storyboard */,
+				2CAC25C122D48BC00018F93C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		6CAB70693FB64C6FEF2B6559 /* Pods */ = {
